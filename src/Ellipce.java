@@ -4,7 +4,7 @@ public class Ellipce extends Rectangle {
     public Background background;
 
 
-    //êîíñòðóêòîð êëàññà Ellipce
+    //конструктор Ellipce
     public Ellipce(int x, int y, int xr, int yr) {
         background = new Background();
 
@@ -13,14 +13,14 @@ public class Ellipce extends Rectangle {
             this.xR = xr;
             this.yR = yr;
         } else {
-            System.out.print("Íåâåðíî ââåäåííûå äàííûå");
+            System.out.print("Неверно введенные данные");
         }
     }
 
-    //ïåðåîïðåäåëÿåì ìåòîä draw() èç èíòåðôåéñà Graph
+    //переопределение метода класса Graph
     @Override
     public void draw() {
-        System.out.println("Ýëèïñ: x = " + super.x + ", y = " + super.y + ", xR = " + this.xR + ", yR = " + this.yR);
-        System.out.println("Ýëëèïñ ñ òåêñòóðîé - " + background.getTexture() + " è öâåòîì - " + background.getColor());
+        System.out.println("Эллипс: x = " + super.x + ", y = " + super.y + ", xR = " + this.xR + ", yR = " + this.yR);
+        System.out.println("Эллипс с текстурой - " + background.getTexture() + " и цветом - " + background.getColor());
     }
 }

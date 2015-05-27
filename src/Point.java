@@ -5,7 +5,7 @@ public class Point extends Graph {
 
 
     /*
-     * ìåòîä, çàäàþùèé êîîðäèíàòû îáúåêòà
+     * координаты объекта
      */
     public void moveTo(int x, int y) {
         this.x = x;
@@ -14,7 +14,7 @@ public class Point extends Graph {
 
 
     /*
-      * ìåòîä, èçìåíÿþùèé êîîðäèíàòû íà çàäàííóþ âåëè÷èíó
+      * метод изменяющий координаты на заданную величину
      */
     public void move(int dx, int dy) {
         x *= dx;
@@ -23,7 +23,7 @@ public class Point extends Graph {
 
     @Override
     public void draw() {
-        System.out.print("Òî÷êà: x = " + this.x + ", y = " + this.y);
+        System.out.print("Координаты: x = " + this.x + ", y = " + this.y);
     }
 
 }
