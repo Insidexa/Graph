@@ -14,15 +14,14 @@ public class Init {
 
         Movable[] arr = new Movable[4];
 
-        arr[0] = new Rectangle(5, 5, 20, 20);
+        arr[0] = new MyWindow(100, 100);
         arr[1] = new Ellipce(5, 5, 10, 10);
         arr[2] = new Circle(1, 2, 3);
-        arr[3] = new MyWindow(100, 100);
+        arr[3] = new Rectangle(5, 5, 20, 20);
 
         for (int i = 0; i < 3; i++) {
             swapXY(arr[i]);
         }
-
         // TODO Auto-generated method stub
 
         //Circle
