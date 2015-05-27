@@ -1,12 +1,11 @@
 
 public class Ellipce extends Rectangle {
     protected int xR, yR;
-    public Background background;
+    public Background background = new Background();
 
 
     //конструктор Ellipce
     public Ellipce(int x, int y, int xr, int yr) {
-        background = new Background();
 
         if (xr > 0 && yr > 0) {
             moveTo(x, y);

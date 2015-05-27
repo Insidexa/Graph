@@ -1,12 +1,23 @@
 
-public class Point extends Graph {
+public class Point extends Graph implements Movable {
     protected int x;
     protected int y;
+    protected String color;
 
+
+    @Override
+    public int getX() {
+        return 0;
+    }
+
+    @Override
+    public int getY() {
+        return 0;
+    }
 
     /*
-     * координаты объекта
-     */
+         * координаты объекта
+         */
     public void moveTo(int x, int y) {
         this.x = x;
         this.y = y;

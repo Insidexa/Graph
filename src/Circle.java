@@ -2,12 +2,10 @@
 public class Circle extends Point {
 
     private int r;
-    public Background background;
+    public Background background = new Background();
 
     //конструктор класса Circle
     public Circle(int x, int y, int r) {
-
-        background = new Background();
 
         if (r > 0) {
             moveTo(x, y);
